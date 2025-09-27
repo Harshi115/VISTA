@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}  
+body {
+    background-image: url("homebg.jpg"); 
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.main {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    color: white; 
+    background-color: rgb(77, 166, 166);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.main .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.inp1, 
+.inp2 {
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid white;
+    width: 250px;
+    font-size: 20px;
+    height: 44px; 
+    margin-top: 20px;
+    outline: none;
+    color: black;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.password-wrapper {
+    position: relative;
+    width: 250px;
+    margin: 20px auto;
+}
+.password-wrapper .inp2 {
+    width: 100%; 
+    padding-right: 40px; 
+    box-sizing: border-box; 
+}
+.password-wrapper i {
+    position: absolute;
+    top: 65%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+.password-wrapper i:hover {
+    color: #333;
+}
+.text button {
+    width: 250px;
+    height: 44px;
+    background-color: plum;
+    color: black;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    border: 3px solid yellow;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+p span {
+    color: aqua;
+}

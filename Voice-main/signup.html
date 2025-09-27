@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Signup Form</h2>
+        <form id="signupForm" onsubmit="return validateForm()" action="signup.php" method="POST">
+            
+            <select id="salutation" name="Salutation" required>
+                <option value="">Salutation</option>
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+            </select>
+            <br>
+            <input type="text" id="firstName" placeholder="First Name" name="Fname" required/>
+            <div id="firstNameError" class="error"></div>
+
+            <div>
+            <input type="text" id="middleName" placeholder="Middle Name" name="Mname" /></div>
+            
+            <input type="text" id="lastName" placeholder="Last Name" required name="Lname"/>
+            <div id="lastNameError" class="error"></div>
+
+            <input type="email" id="email" placeholder="Email" name="Email" required/>
+            <div id="emailError" class="error"></div>
+            
+            <input type="text" id="userId" placeholder="User ID" name="UID" required/>
+            <div id="userIdError" class="error"></div>
+            
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Password" name="Pass" required />
+                <i class="toggle-password fas fa-eye" data-toggle="#password"></i>
+            </div>
+            <div id="passwordError" class="error"></div>
+            
+            <div class="password-wrapper">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+                <i class="toggle-password fas fa-eye" data-toggle="#confirmPassword"></i>
+            </div>
+            <div id="confirmPasswordError" class="error"></div>
+            
+            <div id="captchaContainer">
+                <span id="captchaText"></span>
+                <input type="text" id="captcha" placeholder="Enter Captcha" required/>
+                <div id="captchaError" class="error"></div>
+            </div>
+            
+            <div id="formError" class="error"></div>
+            
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <p class="error" id="formError"></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
